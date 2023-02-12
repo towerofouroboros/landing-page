@@ -142,7 +142,7 @@ ul, .hero-sub-text, .info-text, .hero, .call-to-action-secondary-text {
 
 /* Trailer */
 .trailer {
-  padding: 3% 8% 4%;
+  padding: 5vmin 10vmin;
 }
 
 .trailer-header {
@@ -160,14 +160,18 @@ ul, .hero-sub-text, .info-text, .hero, .call-to-action-secondary-text {
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  
 }
 
 .trailer iframe {
   position: absolute;
-  top:0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
   border: transparent;
 }
 
@@ -207,6 +211,11 @@ ul, .hero-sub-text, .info-text, .hero, .call-to-action-secondary-text {
 @media (max-width: 480px) {
   .screenshot-container {
     grid-template-columns: 1fr;
+  }
+
+  .trailer iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -250,6 +259,7 @@ ul, .hero-sub-text, .info-text, .hero, .call-to-action-secondary-text {
   font-size: 3.5vmin;
   font-weight: bolder;
   color: var(--green);
+  margin-bottom: 1vmin;
 }
 
 .call-to-action-secondary-text {
